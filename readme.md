@@ -1,22 +1,25 @@
-##**Algorithm for LAB_IO_PROJECT**##
+## Algorithm for LAB_IO_PROJECT
 
+```
 Declare variables: inFile, line, tempA, tempB, text, a, b
-open data.csv with inFile.open("data.csv")
-loop while getline(inFile, line) 
-put line iinto a stringstream ss
-read from ss up to first comma into tempA
-read from ss up to next comma into tempB
-read the rest of ss into text
-use stringstream on tempA to convert it to the int a
-use stringstream on tempB to convert it toi the int b
-process a + b
-repeat a + b times print text followed by a space after
-print a newline
-close the file when the loop ends
+Open data.csv with inFile.open("data.csv")
+If the file did not open, print an error and stop it
+Loop while getline(inFile, line) 
+  Put line into a stringstream ss
+  Read from ss up to first comma into tempA
+  Read from ss up to next comma into tempB
+  Read the rest of ss into text
+  Use stringstream on tempA to convert it to the int a
+  Use stringstream on tempB to convert it to the int b
+  Compute a + b
+  Repeat a + b times print text followed by a space after
+  Print a newline
+Close the file when the loop ends
+```
 
+## Pseudocode summary
 
-**EXAMPLE**
-
+```
 open data.csv
 while there is another line in the file:
     split line into tempA, tempB, text at the commas
@@ -26,6 +29,6 @@ while there is another line in the file:
         print text and a space
     print newline
 close file
-
+```
 
 
